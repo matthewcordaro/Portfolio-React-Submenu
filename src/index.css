@@ -14,15 +14,15 @@ html {
 
 :root {
   /* colors */
-  --primary-100: #dbeafe;
-  --primary-200: #bfdbfe;
-  --primary-300: #a5b4fc;
-  --primary-400: #818cf8;
-  --primary-500: #6366f1;
-  --primary-600: #4f46e5;
-  --primary-700: #4338ca;
-  --primary-800: #3730a3;
-  --primary-900: #312e81;
+  --primary-100: #e7eafc;
+  --primary-200: #c2cbf7;
+  --primary-300: #9eabf2;
+  --primary-400: #798ced;
+  --primary-500: #556ce9;
+  --primary-600: #304de4;
+  --primary-700: #0c2ddf;
+  --primary-800: #0a26be;
+  --primary-900: #081f9c;
 
   /* grey */
   --grey-50: #f8fafc;
@@ -257,3 +257,46 @@ ul {
 PROJECT CSS 
 =============== 
 */
+body {
+  background: var(--primary-500);
+}
+/* 
+============= 
+Nav
+=============== 
+*/
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-center {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: none;
+  color: var(--white);
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.toggle-btn {
+  width: 2rem;
+  height: 2rem;
+  background: var(--white);
+  color: var(--primary-700);
+  border-radius: var(--borderRadius);
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+}
