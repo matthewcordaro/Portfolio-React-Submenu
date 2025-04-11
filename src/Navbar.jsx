@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-center'>
-        <h3 className='logo'>Matthew</h3>
+        <h3 className='logo'>MC</h3>
         <button className='toggle-btn' onClick={openSidebar}>
           <FaBars />
         </button>
