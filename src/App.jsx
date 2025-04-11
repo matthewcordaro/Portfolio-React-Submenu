@@ -4,7 +4,6 @@ import Sidebar from "./Sidebar"
 import Submenu from "./Submenu"
 
 function App() {
-  console.log('hai')
   return (
     <main>
       <Navbar />
