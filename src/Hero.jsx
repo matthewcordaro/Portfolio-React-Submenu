@@ -1,6 +1,16 @@
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className='hero-container'>
+      <div className='hero-center'>
+        <h1>
+          Matthew Cordaro <br /> anytime <br /> anywhere
+        </h1>
+        <p>
+          I am totally the bestest dev ever, no cap. Open sourced, pizza fuled,
+          and fully customizeable.
+        </p>
+      </div>
+    </div>
   )
 }
 export default Hero
