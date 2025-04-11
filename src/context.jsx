@@ -2,7 +2,9 @@ import { createContext, useState, useContext } from "react"
 
 const AppContext = createContext()
 
-export const AppProvider = ({ childerne: children }) => {
+export const useGlobalContext = () => useContext(AppContext)
+
+export function AppProvider({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const openSidebar = () => setIsSidebarOpen(true)
   const closeSidebar = () => setIsSidebarOpen(false)
@@ -18,8 +20,4 @@ export const AppProvider = ({ childerne: children }) => {
       {children}
     </AppContext.Provider>
   )
-}
-
-export const useGlobalContext = () => {
-  return useContext(AppContext)
 }
