@@ -10,6 +10,7 @@ export const AppProvider = ({ childerne: children }) => {
   return (
     <AppContext.Provider
       value={{
+        isSidebarOpen,
         openSidebar,
         closeSidebar,
       }}
