@@ -9,6 +9,7 @@ function Hero() {
           I am totally the bestest dev ever, no cap. Open sourced, pizza fuled,
           and fully customizeable.
         </p>
+        <p>RESIZE ME. I'M DYNAMIC.</p>
       </div>
     </div>
   )
